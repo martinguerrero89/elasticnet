@@ -1,6 +1,7 @@
 #Proteomic challenge
-datadir= "D:/Users/Marti/Downloads/elasticnet-master/Data"
+
 clonedir= "D:/Users/Marti/Downloads/elasticnet-master"
+datadir= paste(colnedir,"Data",sep="/")
 
 source(paste(clonedir,"arrange.R",sep="/"))
 source(paste(clonedir,"evalscore.R",sep="/"))
