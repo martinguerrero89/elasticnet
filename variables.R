@@ -1,5 +1,13 @@
 #Proteomic challenge
-setwd("D:/Users/Marti/Downloads/elasticnet-master/Data")
+datadir= "D:/Users/Marti/Downloads/elasticnet-master/Data"
+clonedir= "D:/Users/Marti/Downloads/elasticnet-master"
+
+source(paste(clonedir,"arrange.R",sep="/"))
+source(paste(clonedir,"evalscore.R",sep="/"))
+source(paste(clonedir,"replaceNA.R",sep="/"))
+source(paste(clonedir,"arrange.R",sep="/"))
+
+setwd(datadir)
 
 CNA= read.table("retrospective_breast_CNA_median_sort_common_gene_16884.txt",header=T,row.names=1,sep="\t")
 PROT= read.table("retrospective_breast_proteome_all_gene.txt",header=T,row.names=1,sep="\t")
@@ -15,3 +23,6 @@ L= arrange(RNA,PROTF,by="col")
 
 X=L[[1]]
 Y=L[[2]]
+
+source(paste(clonedir,"RUN.R",sep="/"))
+
