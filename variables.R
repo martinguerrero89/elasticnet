@@ -1,5 +1,5 @@
 #Proteomic challenge
-setwd("D:/Users/Marti/Desktop/Prot_Challenge/Data")
+setwd("D:/Users/Marti/Downloads/elasticnet-master/Data")
 
 CNA= read.table("retrospective_breast_CNA_median_sort_common_gene_16884.txt",header=T,row.names=1,sep="\t")
 PROT= read.table("retrospective_breast_proteome_all_gene.txt",header=T,row.names=1,sep="\t")
